@@ -1,6 +1,9 @@
+## FastMemberMT - Fast Memeber Multi Targeted
 
 Fast access to .net fields/properties
 =====================================
+
+It looks like this project has not been updated in a few years, so I cloned it and added netstandard2.1, netcore3.1 and net5.0.
 
 In .NET reflection is slow... well, kinda slow. If you need access to the members of an arbitrary type, with the type and member-names known only at runtime - then it is frankly **hard** (especially for DLR types). This library makes such access easy and fast.
 
