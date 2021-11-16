@@ -5,12 +5,12 @@
 In .NET reflection is slow... well, kinda slow. If you need access to the members of an arbitrary type, with the type and member-names known only at runtime - then it is frankly hard (especially for DLR types). This library makes such access easy and fast. This project looks like it hasnt been updated in a bit, hence the fork and redistribution.</Description>
     <Copyright>Copyright © Marc Gravell 2012-2021</Copyright>
     <AssemblyTitle>FastMember</AssemblyTitle>
-    <Version>5.0.0</Version>
+    <Version>6.0.0</Version>
     <Authors>Marc Gravell</Authors>
-    <TargetFrameworks>netstandard2.0;net461;netcoreapp2.0;netstandard2.1;net48;netcoreapp3.1;net5.0;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net461;netstandard2.1;net48;netcoreapp3.1;net5.0;net6.0;</TargetFrameworks>
     <AssemblyName>FastMember</AssemblyName>
     <PackageTags>Reflection;Dynamic;Member;Access</PackageTags>
-    <PackageReleaseNotes>.net 5.0, netstandard 2.1, netcore3.1</PackageReleaseNotes>
+    <PackageReleaseNotes>net6.0, .net 5.0, netstandard 2.1, netcore3.1</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/mgravell/fast-member</PackageProjectUrl>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
@@ -36,7 +36,6 @@ In .NET reflection is slow... well, kinda slow. If you need access to the member
     <PackageReference Include="System.Reflection.Emit.ILGeneration" Version="4.7.0" />
     <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="System.Security.Permissions" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
@@ -46,5 +45,8 @@ In .NET reflection is slow... well, kinda slow. If you need access to the member
     <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Security.Permissions" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Security.Permissions" Version="6.0.0" />
   </ItemGroup>  
 </Project>
